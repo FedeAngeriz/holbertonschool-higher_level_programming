@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+"""Se crea una clase, llamada Square,
+    en la cual creamos atributos dentro"""
+
+class Square:
+
+    def __init__(self, size):
+        """defino atributo dentro de la clase"""
+        self.__sizeof__ = size
