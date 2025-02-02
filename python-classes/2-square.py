@@ -3,7 +3,7 @@
 
 
 class Square:
-    """Se define un Square mediante la clase anteerior"""
+    """Se define un Square mediante la clase anterior"""
     def __init__(self, size=0):
         """Se inicializa Square con un tamaño opcional
         size (int): por defecto es 0"""

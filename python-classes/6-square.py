@@ -1,12 +1,16 @@
 #!/usr/bin/python3
+"""Se define clase Square"""
+
 
 class Square:
     """Se define un Square mediante la clase anteerior"""
 
 
     def __init__(self, size=0, position=(0, 0)):
-        """  .-"""
-        
+        """ Se inicializa Square con tamaño opcional.
+
+            size (int): por defecto 0. """
+
         self.size = size
         self.position = position
 
