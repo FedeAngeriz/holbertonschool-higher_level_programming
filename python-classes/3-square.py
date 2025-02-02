@@ -15,7 +15,7 @@ class Square:
         if size < 0:
             raise ValueError("size must be >= 0")
             """ValueError: Si size es menor que 0"""
-        self.__sizeof__ = size
+        self.__size = size
         """Atributo privado"""
 
     def area(self):
@@ -23,4 +23,4 @@ class Square:
         Retorna: Area del cuadrado (size * size)
         """
 
-        return self.__sizeof__ ** 2
+        return self.__size ** 2

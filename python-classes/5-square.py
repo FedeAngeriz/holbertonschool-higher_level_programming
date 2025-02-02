@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Se define clase Square"""
+
+
 class Square:
     """Se define un Square mediante la clase anteerior"""
     def __init__(self, size=0):

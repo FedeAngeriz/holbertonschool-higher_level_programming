@@ -7,4 +7,4 @@ class Square:
     """Se define un Square mediante la clase anteerior"""
     def __init__(self, size):
         """defino atributo dentro de la clase"""
-        self.__sizeof__ = size
+        self.__size = size
