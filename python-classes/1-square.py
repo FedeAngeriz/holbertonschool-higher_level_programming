@@ -2,6 +2,7 @@
 """Se crea una clase, llamada Square,
     en la cual creamos atributos dentro"""
 
+
 class Square:
 
     def __init__(self, size):

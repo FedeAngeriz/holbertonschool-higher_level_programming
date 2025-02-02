@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Se crea una clase llamada Square"""
+
+
 class Square:
 
     def __init__(self, size=0):
@@ -15,10 +17,9 @@ class Square:
             """ValueError: Si size es menor que 0"""
         self.__sizeof__ = size
         """Atributo privado"""
-    
+
     def area(self):
         """Calcula y devuelve el area del cuadrado
-        
         Retorna: Area del cuadrado (size * size)
         """
 
