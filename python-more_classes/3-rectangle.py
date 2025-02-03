@@ -42,7 +42,7 @@ class Rectangle:
         return (self.__width + self.__height) * 2
 
     def my_print(self):
-        if (self.__width or self.__height) == 0:
+        if self.__width == 0 or self.__height == 0:
             print()
         else:
             for _ in range(self.__height):
