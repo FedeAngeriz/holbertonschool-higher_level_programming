@@ -6,6 +6,7 @@ class Rectangle:
     """Se crea un Rectangle mediante ancho y alto opcionales"""
 
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         self.width = width
@@ -55,7 +56,8 @@ class Rectangle:
     def __str__(self):
         if self.width == 0 or self.__height == 0:
             return
-        return "\n".join("#" * self.__width for i in range(self.__height))
+        p_symbol = str(self.print_symbol)
+        return "\n".join(p_symbol * self.__width for i in range(self.__height))
 
     def __repr__(self):
         return f"Rectangle({self.__width}, {self.__height})"
