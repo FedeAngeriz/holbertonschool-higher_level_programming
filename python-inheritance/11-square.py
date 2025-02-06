@@ -6,14 +6,16 @@ class BaseGeometry:
     """Metodo que debe ser implementado en las subclases"""
     def area(self):
         raise Exception("area() is not implemented")
-    
+
     def integer_validator(self, name, value):
         if isinstance(value, int):
             raise TypeError("<name> must be an integer")
         if value <= 0:
             raise ValueError("<name> must be greater than 0")
 
+
 """Creamos clase Rectangle, que hereda BaseGeometry"""
+
 
 class Rectangle(BaseGeometry):
     """Se define un rectangulo con alto y ancho definidos"""
@@ -22,15 +24,17 @@ class Rectangle(BaseGeometry):
         self.integer_validator("height", height)
         self.__width = width
         self.__height = height
-    
+
     def area(self):
         """Devuelve area de rectangulo"""
         return self.width * self.height
-    
+
     def __str__(self):
         return f"[Rectangle] {self.__width}/{self.__height}"
 
+
 """Creamos clase Square, que hereda Rectangle"""
+
 
 class Square(Rectangle):
     """Se define un cuadrado"""
@@ -38,10 +42,10 @@ class Square(Rectangle):
         self.integer_validator("size", size)
         self.__size = size
         super().__init__(size, size)
-    
+
     def area(self):
         """Devuelve area de cuadrado"""
         return self.__size * self.__size
-    
+
     def __str__(self):
         return f"[Square] {self.__width}/{self.__height}"
