@@ -18,7 +18,7 @@ class BaseGeometry:
 
 
 class Rectangle(BaseGeometry):
-    """Se define un rectangulo con alto y ancho definidos"""
+    """Se define un rectangulo con alto y ancho validados"""
     def __init__(self, width, height):
         self.integer_validator("width", width)
         self.integer_validator("height", height)
@@ -37,7 +37,7 @@ class Rectangle(BaseGeometry):
 
 
 class Square(Rectangle):
-    """Se define un cuadrado"""
+    """Se define un cuadrado validado"""
     def __init__(self, size):
         self.integer_validator("size", size)
         self.__size = size
