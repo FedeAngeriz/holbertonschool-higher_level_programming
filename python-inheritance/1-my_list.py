@@ -1,3 +1,9 @@
 #!/usr/bin/python3
-def print_sorted(self):
-    print(sorted(self))
+"""Creamos clase MyList, que hereda una
+lista llamada list"""
+
+
+class MyList(list):
+    """Imprime una lista ordenada"""
+    def print_sorted(self):
+        print(sorted(self))
