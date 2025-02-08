@@ -6,6 +6,7 @@ BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 """Creamos clase Rectangle, que hereda BaseGeometry"""
 
+
 class Rectangle(BaseGeometry):
     """Se define un rectangulo con alto y ancho validados"""
     def __init__(self, width, height):
