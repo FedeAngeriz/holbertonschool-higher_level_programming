@@ -16,9 +16,10 @@ class Square(Rectangle):
     """Se define un cuadrado"""
     def __init__(self, size):
         super().__init__(size, size)
+        self.__size = size
 
     def __str__(self):
         return f"[Square] {self._Rectangle__width}/{self._Rectangle__height}"
-    
+
     def area(self):
         return self.__size * self.__size
