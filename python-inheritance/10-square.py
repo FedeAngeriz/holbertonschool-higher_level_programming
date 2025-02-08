@@ -4,6 +4,8 @@
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
+"""Creamos clase Rectangle"""
+
 
 Rectangle = __import__('9-rectangle').Rectangle
 
@@ -11,7 +13,7 @@ Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
-
+    """Se define un cuadrado"""
     def __init__(self, size):
         super().__init__(size, size)
 
