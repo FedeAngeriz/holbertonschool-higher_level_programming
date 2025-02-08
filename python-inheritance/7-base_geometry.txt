@@ -1,0 +1,17 @@
+Caso 1: Intento de instanciar y llamar a area()
+------------------------------------------------
+bg = BaseGeometry()
+bg.area()
+# Esperado: Exception con el mensaje "area() is not implemented"
+
+Caso 2: Validación de un número entero válido
+------------------------------------------------
+bg = BaseGeometry()
+bg.integer_validator("width", 10)
+# Esperado: No debería generar ninguna excepción
+
+Caso 3: Validación de un valor inválido (negativo)
+------------------------------------------------
+bg = BaseGeometry()
+bg.integer_validator("height", -5)
+# Esperado: ValueError con el mensaje "height must be greater than 0"
