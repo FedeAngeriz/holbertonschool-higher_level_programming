@@ -1,18 +1,22 @@
 #!/usr/bin/env python3
-from abc import ABC
+from abc import ABC, abstractmethod
 from math import pi
 
 
 class Shape(ABC):
+    @abstractmethod
     def area(self):
         pass
 
+    @abstractmethod
     def perimeter(self):
         pass
 
 
 class Circle(Shape):
     def __init__(self, radius):
+        if radius <= 0:
+            raise ValueError("radius is less than 0")
         self.radius = radius
 
     def area(self):
