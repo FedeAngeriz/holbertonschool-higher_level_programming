@@ -20,7 +20,7 @@ def status():
       return jsonify("OK")
 
 @app.route("/users/<username>")
-def user(username):
+def get_user(username):
       user = users.get(username)
       if user:
             return jsonify(user)

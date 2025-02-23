@@ -29,7 +29,11 @@ def fetch_and_save_posts():
             escribir = csv.DictWriter(file, fieldnames=["id", "title", "body"])
             escribir.writeheader()
             escribir.writerows(posts)
-        
+
+            for post in posts:
+                escribir.writerow({"id": post["id"], "title": post["title"], "body": post["body"]})
+
+
         print("Datos guardados en posts.csv")
     else:
         print("Error al obtener los datos")
