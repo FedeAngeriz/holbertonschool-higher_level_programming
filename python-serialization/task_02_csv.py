@@ -13,10 +13,13 @@ def convert_csv_to_json(filename_csv):
             leer = csv.DictReader(file_csv)
             datos = list(leer)
 
-        with open(data.json, 'w') as file_json:
+        with open('data.json', 'w') as file_json:
             json.dump(datos, file_json)
         return True
 
     except FileNotFoundError:
-        print("file not found")
+        print(f"Error: File '{file_csv}'not found.")
+        return False
+    except Exception as error:
+        print(f"Error convertir CSV to JSON: {error}")
         return False
