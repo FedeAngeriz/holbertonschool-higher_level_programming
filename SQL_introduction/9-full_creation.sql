@@ -1,10 +1,10 @@
 -- creates a table second_table in the database
-create table if not exists second_table(
+CRATE TABLE IF NOT EXISTS second_table(
     id int,
     name VARCHAR(256),
     score int,
 );
-insert into second_table (id, name, score) values
+INSERT INTO second_table (id, name, score) VALUES
 (1, 'John', 10)
 (2, 'Alex', 3)
 (3, 'Bob', 14)
