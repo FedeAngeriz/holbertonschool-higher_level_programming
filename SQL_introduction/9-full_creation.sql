@@ -1,3 +1,4 @@
+-- creates a table second_table in the database
 create table if not exists second_table(
     id int,
     name VARCHAR(256),
