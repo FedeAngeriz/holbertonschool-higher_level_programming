@@ -1,3 +1,4 @@
+-- Enumerar todos los shows que tengan al menos un genero vinculado
 USER hbtn_0d_tvshows;
 
 SELECT tv_shows.title, tv_show_genres.genre_id

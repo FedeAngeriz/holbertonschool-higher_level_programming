@@ -1,3 +1,4 @@
+-- Creacion de Base de Datos y Tabla cities
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
 
 USE hbtn_0d_usa;

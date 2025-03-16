@@ -1,3 +1,4 @@
+-- Enumerar todos los generos de la DB y mostrar la cantidad de programas vinculados a cada uno
 USE hbtn_0d_tvshows;
 
 SELECT tv_genres.name AS genre,(

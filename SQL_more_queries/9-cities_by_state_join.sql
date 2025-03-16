@@ -1,3 +1,4 @@
+-- Enumerar todas las ciudades que esten en la DB
 USE hbtn_0d_usa;
 
 SELECT cities.id, cities.name (

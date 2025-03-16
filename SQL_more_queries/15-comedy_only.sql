@@ -1,3 +1,4 @@
+-- Enumerar todos los shows de comedia
 USE hbtn_0d_tvshows;
 
 SELECT tv_shows.title

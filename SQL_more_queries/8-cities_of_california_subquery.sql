@@ -1,3 +1,4 @@
+-- Enumerar todas las ciudades de California
 USER hbtn_0d_usa;
 
 SELECT id, name

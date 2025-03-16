@@ -1,3 +1,4 @@
+-- Enumerar todos los generos del show Dexter
 USE hbtn_0d_tvshows;
 
 SELECT tv_genres.name
