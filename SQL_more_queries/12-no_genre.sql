@@ -1,6 +1,4 @@
 -- Enumerar todos los shows en la DB sin generos
-USE hbtn_0d_tvshows;
-
 SELECT tv_shows.title, NULL AS genre_id
 FROM tv_shows
 WHERE tv_shows.id NOT IN (SELECT show_id FROM tv_shows_genres)
