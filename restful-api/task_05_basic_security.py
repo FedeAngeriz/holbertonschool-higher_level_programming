@@ -28,7 +28,7 @@ def login():
     username = data.get("username")
     password = data.get("password")
 
-    if username in users and check_password_hash(users[username]["password"], password):
+    if username in user and check_password_hash(users[username]["password"], password):
         
 
 @app.route('/protected')
